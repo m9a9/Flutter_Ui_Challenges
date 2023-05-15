@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'custom_button.dart';
+import 'custom_textField.dart';
 
 class LoginPageBody extends StatelessWidget {
   const LoginPageBody({super.key});
@@ -90,38 +91,7 @@ class LoginPageBody extends StatelessWidget {
                                 title: 'Password',
                               ),
 
-                              // Container(
-                              //   padding: const EdgeInsets.all(10),
-                              //   decoration: BoxDecoration(
-                              //     border: Border(
-                              //       bottom:
-                              //           BorderSide(color: Colors.grey[200]!),
-                              //     ),
-                              //   ),
-                              //   child: const TextField(
-                              //     decoration: InputDecoration(
-                              //         contentPadding: EdgeInsets.all(8),
-                              //         hintText: 'Email or PhoneNumber',
-                              //         hintStyle: TextStyle(color: Colors.grey),
-                              //         border: InputBorder.none),
-                              //   ),
-                              // ),
-                              // Container(
-                              //   padding: const EdgeInsets.all(10),
-                              //   decoration: BoxDecoration(
-                              //     border: Border(
-                              //       bottom:
-                              //           BorderSide(color: Colors.grey[200]!),
-                              //     ),
-                              //   ),
-                              //   child: const TextField(
-                              //     decoration: InputDecoration(
-                              //         contentPadding: EdgeInsets.all(8),
-                              //         hintText: 'Password',
-                              //         hintStyle: TextStyle(color: Colors.grey),
-                              //         border: InputBorder.none),
-                              //   ),
-                              // )
+                             
                             ],
                           ),
                         ),
@@ -187,25 +157,3 @@ class LoginPageBody extends StatelessWidget {
   }
 }
 
-class CustomTextField extends StatelessWidget {
-  const CustomTextField({super.key, required this.title});
-  final String title;
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: const EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        border: Border(
-          bottom: BorderSide(color: Colors.grey[200]!),
-        ),
-      ),
-      child: TextField(
-        decoration: InputDecoration(
-            contentPadding: const EdgeInsets.all(8),
-            hintText: title,
-            hintStyle: const TextStyle(color: Colors.grey),
-            border: InputBorder.none),
-      ),
-    );
-  }
-}
